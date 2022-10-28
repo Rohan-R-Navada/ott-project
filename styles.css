@@ -56,7 +56,7 @@ body.homepage {
   border-radius: 15px;
   position: relative;
   width: 50%;
-  background-image: url("movie.jpg");
+  background-image: url("/img/movie.jpg");
   background-size: cover;
   box-shadow: 3px 3px 10px #252525;
 }
