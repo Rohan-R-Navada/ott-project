@@ -1,0 +1,174 @@
+<html>
+  <head>
+    <title>movies</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="moviepage">
+    <ul>
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="#">ANIME</a></li>
+      <li><a href="#">SERIES</a></li>
+      <li class="homebutton"><a href="movie.html">MOVIES</a></li>
+    </ul>
+    <div class="movieheading">
+      <header>movies</header>
+      <div class="description">
+        A short escape from reality by entering into someone elses reality
+      </div>
+    </div>
+    <div class="selectgenre">select your favourite genre here:</div>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterselection('all')">
+        Show all
+      </button>
+      <button class="btn" onclick="filterselection('kids')">
+        kids section
+      </button>
+      <button class="btn" onclick="filterselection('romance')">romance</button>
+      <button class="btn" onclick="filterselection('comedy')">comedy</button>
+      <button class="btn" onclick="filterselection('horror')">horror</button>
+
+      <button class="btn" onclick="filterselection('murder')">
+        murder mystery
+      </button>
+      <button class="btn" onclick="filterselection('fantasy')">fantasy</button>
+    </div>
+    <div class="movcontainer" id="container">
+      <div class="movies kids">
+        
+          <div class="pic">
+            <img class="img" src="frozen.jpeg" />
+          </div>
+          <div class="title">FROZEN</div>
+
+          <button class="watchbtn">WATCH NOW</button>
+      </div>
+
+      <div class="movies kids">
+        
+          <div class="pic">
+            <img class="img" src="httyd.jpg" />
+          </div>
+          <div class="title">HOW TO TRAIN YOUR DRAGON</div>
+          <button class="watchbtn">WATCH NOW</button>
+        
+      </div>
+      <div class="movies filterdiv horror" >
+        <div class="">
+          <div class="pic">
+            <img class="img" src="conjuring.jpg" />
+          </div>
+          <div class="title">CONJURING </div>
+          <button class="watchbtn">WATCH NOW</button>
+        </div>
+      </div>
+      <div class="movies"><div class="filterdiv horror">
+        <div class="pic">
+          <img class="img" src="nun.jpg" />
+        </div>
+        <div class="title">THE NUN</div>
+        <button class="watchbtn">WATCH NOW</button></div>
+      </div>
+      <div class="movies"><div class="filterdiv comedy">
+        <div class="pic">
+          <img class="img" src="f2.jpg" />
+        </div>
+
+        <div class="title">F2</div>
+        <button class="watchbtn">WATCH NOW</button></div>
+      </div>
+      <div class="movies">
+        <div class="pic">
+          <img class="img" src="oldmonk.jpg" />
+        </div>
+        <div class="title">OLD MONK</div>
+        <button class="watchbtn">WATCH NOW</button>
+      </div>
+      <div class="movies">
+        <div class="pic">
+          <img class="img" src="after.jpg" />
+        </div>
+        <div class="title">AFTER</div>
+        <button class="watchbtn">WATCH NOW</button>
+      </div>
+      <div class="movies">
+        <div class="pic">
+          <img class="img" src="premam.jpg" />
+        </div>
+        <div class="title">PREMAM</div>
+        <button class="watchbtn">WATCH NOW</button>
+      </div>
+      <div class="movies">
+        <div class="pic">
+          <img class="img" src="eega.jpg" />
+        </div>
+        <div class="title">EEGA</div>
+        <button class="watchbtn">WATCH NOW</button>
+      </div>
+      <div class="movies">
+        <div class="pic">
+          <img class="img" src="twilight.jpg" />
+        </div>
+        <div class="title">TWILIGHT</div>
+        <button class="watchbtn">WATCH NOW</button>
+      </div>
+      <div class="movies">
+        <div class="pic">
+          <img class="img" src="etternals.jpg" />
+        </div>
+        <div class="title">ETERNALS</div>
+        <button class="watchbtn">WATCH NOW</button>
+      </div>
+      <div class="movies">
+        <div class="pic">
+          <img class="img" src="mrsserial.jpg" />
+        </div>
+        <div class="title">MRS.SERIAL KILLER</div>
+        <button class="watchbtn">WATCH NOW</button>
+      </div>
+      <div class="movies">
+        <div class="pic">
+          <img class="img" src="avengers.jpg" />
+        </div>
+        <div class="title">AVENGERS 5</div>
+        <button class="watchbtn">WATCH NOW</button>
+      </div>
+      <div class="movies">
+        <div class="pic">
+          <img class="img" src="siccin.jpg" />
+        </div>
+        <div class="title">SICCIN</div>
+        <button class="watchbtn">WATCH NOW</button>
+      </div>
+      <div class="movies">
+        <div class="pic">
+          <img class="img" src="chainsaw.jpg" />
+        </div>
+        <div class="title">CHAINSAW MASSACRE</div>
+        <button class="watchbtn">WATCH NOW</button>
+      </div>
+      <div class="movies">
+        <div class="pic">
+          <img class="img" src="welcome.jpg" />
+        </div>
+        <div class="title">WELCOME</div>
+        <button class="watchbtn">WATCH NOW</button>
+      </div>
+      <div class="movies">
+        <div class="pic">
+          <img class="img" src="shiddat.jpg" />
+        </div>
+        <div class="title">SHIDDAT</div>
+        <button class="watchbtn">WATCH NOW</button>
+      </div>
+      <div class="movies">
+        <div class="pic">
+          <img class="img" src="harrypotter.jpg" />
+        </div>
+        <div class="title">HARRY POTTER </div>
+        <button class="watchbtn">WATCH NOW</button>
+      </div>
+    </div>
+  </body>
+  <script src="filter.js"></script>
+</html>
