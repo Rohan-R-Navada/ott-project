@@ -39,7 +39,6 @@ li a {
 body.homepage {
   background-color: #28231d;
   font-family: "Kanit", sans-serif;
-  overflow: hidden;
 }
 .selection {
   justify-content: space-evenly;
@@ -216,9 +215,10 @@ body.moviepage {
 
 }
 .movies{
-  box-shadow: 2px 2px 10px ;
+  box-shadow: 2px 2px 10px cyan ;
   padding: 2rem;
   border-radius: 20px;
+  
 }
 
 
