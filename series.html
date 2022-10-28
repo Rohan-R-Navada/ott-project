@@ -1,45 +1,38 @@
 <html>
   <head>
-    <title>movies</title>
+    <title>series</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="moviepage">
+  <body class="seriespage">
     <ul>
       <li><a href="home.html">HOME</a></li>
       <li><a href="#">ANIME</a></li>
-      <li><a href="series.html">SERIES</a></li>
-      <li class="homebutton"><a href="movie.html">MOVIES</a></li>
+      <li><a href="movie.html">MOVIES</a></li>
+      <li class="homebutton"><a href="series.html">MOVIES</a></li>
     </ul>
-    <div class="movieheading">
-      <header>movies</header>
+    <div class="seriesheading">
+      <header>series</header>
       <div class="description">
-        A short escape from reality by entering into someone elses reality
+        An extended intrusion into someone's life. A longer movie for movies that can't end in 3 hours.
       </div>
     </div>
-    <div class="selectgenre">select your favourite genre here:</div>
+    <div class="selectlanguage">select your favourite language here:</div>
     <div id="myBtnContainer">
-      <button class="btn active" onclick="filterselection('all')">
-        Show all
-      </button>
-      <button class="btn" onclick="filterselection('kids')">
-        kids section
-      </button>
-      <button class="btn" onclick="filterselection('romance')">romance</button>
-      <button class="btn" onclick="filterselection('comedy')">comedy</button>
-      <button class="btn" onclick="filterselection('horror')">horror</button>
-
-      <button class="btn" onclick="filterselection('murder')">
-        murder mystery
-      </button>
-      <button class="btn" onclick="filterselection('fantasy')">fantasy</button>
+      <button class="btn active" onclick="filterselection('all')">Show all</button>
+      <button class="btn" onclick="filterselection('eng')"> english</button>
+      <button class="btn" onclick="filterselection('russian')">russian</button>
+      <button class="btn" onclick="filterselection('korean')">korean</button>
+      <button class="btn" onclick="filterselection('thai')">thai</button>
+      <button class="btn" onclick="filterselection('ind')">indian</button>
+      <button class="btn" onclick="filterselection('spanish')">spanish</button>
     </div>
-    <div class="movcontainer" id="container">
-      <div class="movies kids">
+    <div class="sercontainer" id="scontainer">
+      <div class="series eng">
         
           <div class="pic">
-            <img class="img" src="img/frozen.jpeg" />
+            <img class="img" src="img/vd.jpg" />
           </div>
-          <div class="title">FROZEN</div>
+          <div class="title">The Vampire Diaries</div>
 
           <button class="watchbtn">WATCH NOW</button>
       </div>
