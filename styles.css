@@ -39,6 +39,7 @@ li a {
 body.homepage {
   background-color: #28231d;
   font-family: "Kanit", sans-serif;
+  overflow: hidden;
 }
 .selection {
   justify-content: space-evenly;
@@ -111,7 +112,7 @@ p {
   font-size: 20px;
   text-transform: lowercase;
 }
-.movieheading {
+.movieheading , .seriesheading{
   color: whitesmoke;
   padding-left: 50px;
   padding-top: 10px;
@@ -126,8 +127,9 @@ header {
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 2px;
+  color: whitesmoke;
 }
-.selectgenre {
+.selectgenre , .selectlanguage{
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -152,6 +154,9 @@ header {
 .btn:hover {
   transform: scale(1.25);
   cursor: pointer;
+}
+.btn.active{
+  color: #cc0000;
 }
 /* .movies {
  display: inline-block;
@@ -220,7 +225,9 @@ body.moviepage {
   border-radius: 20px;
   
 }
-
+/* .btn:active{
+  color: #cc0000;
+} */
 
 .pic {
   border-radius: 20px;
@@ -236,7 +243,7 @@ body.moviepage {
 img:hover{
   transform: scale(1.25);
 }
-body.moviepage {
+body.moviepage ,body.seriespage{
   background-color: #28231d;
   overflow-x: hidden;
   font-family: "Kanit", sans-serif;
@@ -249,6 +256,7 @@ body.moviepage {
   max-width: 200px;
   height: 50px;
 margin-block: 10px;
+letter-spacing: 2px;
 
 }
 
@@ -273,9 +281,7 @@ margin-block: 10px;
     transform: scale(1.15);
    cursor: pointer;
   }
-  .show{
-    display: block;
-  }
+
 
   .sercontainer {
     margin-top: 50px;
