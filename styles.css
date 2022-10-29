@@ -288,7 +288,7 @@ margin-block: 10px;
   }
 
   .series{
-    box-shadow: 2px 2px 10px cyan ;
+    box-shadow: 2px 2px 10px rgb(245, 97, 181) ;
     padding: 2rem;
     border-radius: 20px;
   }
