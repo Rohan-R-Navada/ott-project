@@ -112,7 +112,7 @@ p {
   font-size: 20px;
   text-transform: lowercase;
 }
-.movieheading , .seriesheading{
+.movieheading , .seriesheading ,.animeheading{
   color: whitesmoke;
   padding-left: 50px;
   padding-top: 10px;
@@ -122,6 +122,7 @@ header {
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 3px;
+  color: whitesmoke;
 }
 .description {
   font-size: 20px;
@@ -129,7 +130,7 @@ header {
   letter-spacing: 2px;
   color: whitesmoke;
 }
-.selectgenre , .selectlanguage{
+/* .selectgenre , .selectlanguage{
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -149,8 +150,8 @@ header {
   border-radius: 10%;
   text-transform: uppercase;
   background-image: linear-gradient(to right, #a29bfe, #55efc4);
-  transition: transform 0.2s;
-}
+  transition: transform 0.2s; */
+ 
 .btn:hover {
   transform: scale(1.25);
   cursor: pointer;
@@ -243,7 +244,7 @@ body.moviepage {
 img:hover{
   transform: scale(1.25);
 }
-body.moviepage ,body.seriespage{
+body.moviepage ,body.seriespage ,body.animepage{
   background-color: #28231d;
   overflow-x: hidden;
   font-family: "Kanit", sans-serif;
@@ -283,7 +284,7 @@ letter-spacing: 2px;
   }
 
 
-  .sercontainer {
+  .sercontainer ,.anicontainer{
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -298,12 +299,13 @@ letter-spacing: 2px;
     padding: 2rem;
     border-radius: 20px;
   }
-
-  body.seriespage {
-    background-color: #28231d;
-    overflow-x: hidden;
-    font-family: "Kanit", sans-serif;
+  .anime{
+    box-shadow: 2px 2px 10px  #7fff00 ;
+    padding: 2rem;
+    border-radius: 20px;
   }
+
+
   .title {
     color: whitesmoke;
     text-align: center;
