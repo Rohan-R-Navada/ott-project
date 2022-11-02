@@ -16,7 +16,7 @@ ul {
     
     
   }
-  .li a:hover {
+   li:hover {
     border-radius: 40px;
     background-image: linear-gradient(
       to right top,
@@ -34,6 +34,7 @@ ul {
     font-size: 20px;
     font-family: "Kanit", sans-serif;
     letter-spacing: 3px;
+    margin-left: 60px;
 
   }
   
@@ -52,7 +53,8 @@ ul {
     left: 0;
     width: 500%;
     height: 100%;
-    animation: animate 8s linear infinite;
+    animation: animate  5s linear infinite;
+    z-index: -1;
   }
   .slider .slide {
     position: relative;
