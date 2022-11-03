@@ -55,9 +55,12 @@ body.homepage {
   border-radius: 15px;
   position: relative;
   width: 50%;
-  background-image: url("img/movie.jpg");
-  background-size: cover;
+  /* background-image: url("img/movie.jpg");
+  background-size: cover; */
   box-shadow: 3px 3px 10px #252525;
+}
+#movlogo{
+  background-image: url("img/movlogo.jpg");
 }
 .hiddentxt {
   position: absolute;
@@ -299,7 +302,7 @@ body.animepage {
   border-radius: 20px;
 }
 .anime {
-  box-shadow: 2px 2px 10px #7fff00;
+  box-shadow: 2px 2px 10px #00ff4c;
   padding: 2rem;
   border-radius: 20px;
 }

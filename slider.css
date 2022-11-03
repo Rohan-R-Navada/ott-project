@@ -20,11 +20,7 @@ ul {
     border-radius: 40px;
     background-image: linear-gradient(
       to right top,
-      #051937,
-      #004d7a,
-      #008793,
-      #00bf72,
-      #a8eb12
+      #00ff87,#60efff
     )
   }
   ul li {
@@ -53,7 +49,7 @@ ul {
     left: 0;
     width: 500%;
     height: 100%;
-    animation: animate  5s linear infinite;
+    animation: animate    linear infinite;
     z-index: -1;
   }
   .slider .slide {
@@ -64,23 +60,25 @@ ul {
   }
    .caption {
     position: absolute;
-    bottom: 600px;
+    bottom: 500px;
     left: 100px;
     right: 50%;
-    padding: 30px;
-    background: rgba(0, 0, 0, 0.5);
+    /* padding: 30px; */
+    
+    /* background: rgba(0, 0, 0, 0.5); */
     box-sizing: border-box;
     transition: 0.5s;
   }
    .caption h2 {
-    margin: 0 0 20;
+    
     padding: 0;
     color: black;
+
     font-size : 48px;
     transition: 0.5s;
   }
    .caption p {
-    margin: 0;
+  margin: 30 0 20px;
     padding: 0;
     color: black;
     font-size: 20px;
@@ -165,3 +163,6 @@ ul {
 
 
   }
+
+
+  
