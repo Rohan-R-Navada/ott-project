@@ -48,16 +48,36 @@ body.homepage {
   font-weight: bold;
   letter-spacing: 3px;
 }
-.options {
+.options1,
+.options2,
+.options3 {
   padding: 10%;
 
   margin: 30px;
   border-radius: 15px;
   position: relative;
   width: 50%;
-  background-image: url("img/movie.jpg");
-  background-size: cover;
+  /* background-image: url("img/movie.jpg");
+  background-size: cover; */
   box-shadow: 3px 3px 10px #252525;
+}
+.options1 {
+  background-image: url("img/movlogo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.options2 {
+  background-image: url("img/weblogo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.options3 {
+  background-image: url("img/anilogo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hiddentxt {
@@ -88,7 +108,13 @@ body.homepage {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-.options:hover .hiddentxt {
+.options1:hover .hiddentxt {
+  height: 100%;
+}
+.options2:hover .hiddentxt {
+  height: 100%;
+}
+.options3:hover .hiddentxt {
   height: 100%;
 }
 h1 {

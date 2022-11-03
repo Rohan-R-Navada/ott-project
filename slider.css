@@ -1,90 +1,79 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
-*{
-    font-family:"Kanit", sans-serif; 
-    margin: 0;
-    padding: 0;
-    overflow:hidden;
+* {
+  font-family: "Kanit", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-
-
 ul {
-    list-style: none;
-    background-color: rgba(0,0,0,0);
-    justify-content: center;
-    text-align: left;
-    
-    
-  }
-   li:hover {
-    border-radius: 40px;
-    background-image: linear-gradient(
-      to right top,
-      #00ff87,#60efff
-    )
-  }
-  ul li {
-    display: inline-block;
-    margin-block: 20px;
-    padding: 20px 40px;
-    font-size: 20px;
-    font-family: "Kanit", sans-serif;
-    letter-spacing: 3px;
-    margin-left: 60px;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0);
+  justify-content: center;
+  text-align: left;
+}
+li:hover {
+  border-radius: 40px;
+  background-image: linear-gradient(to right top, #00ff87, #60efff);
+}
+ul li {
+  display: inline-block;
+  margin-block: 20px;
+  padding: 20px 40px;
+  font-size: 20px;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 3px;
+  margin-left: 60px;
+}
 
-  }
-  
-  li a {
-    text-decoration: none;
-    color: black;
+li a {
+  text-decoration: none;
+  color: black;
 
-    font-weight: 700;
-  }
+  font-weight: 700;
+}
 
+.aslider , .mslider ,.sslider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 100%;
+  animation: animate 20s linear infinite;
+  z-index: -1;
+}
+.aslider .aslide , .mslider .mslide , .sslider .sslide{
+  position: relative;
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+.caption {
+  position: absolute;
+  bottom: 500px;
+  left: 100px;
+  right: 50%;
+  /* padding: 30px; */
 
+  /* background: rgba(0, 0, 0, 0.5); */
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.caption h2 {
+  padding: 0;
+  color: black;
 
-.slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 500%;
-    height: 100%;
-    animation: animate    linear infinite;
-    z-index: -1;
-  }
-  .slider .slide {
-    position: relative;
-    width: 20%;
-    height: 100%;
-    float: left;
-  }
-   .caption {
-    position: absolute;
-    bottom: 500px;
-    left: 100px;
-    right: 50%;
-    /* padding: 30px; */
-    
-    /* background: rgba(0, 0, 0, 0.5); */
-    box-sizing: border-box;
-    transition: 0.5s;
-  }
-   .caption h2 {
-    
-    padding: 0;
-    color: black;
-
-    font-size : 48px;
-    transition: 0.5s;
-  }
-   .caption p {
+  font-size: 48px;
+  transition: 0.5s;
+}
+.caption p {
   margin: 30 0 20px;
-    padding: 0;
-    color: black;
-    font-size: 20px;
-    transition: 0.5s;
-  }
-  /* @media (max-width: 768px) {
+  padding: 0;
+  color: black;
+  font-size: 20px;
+  transition: 0.5s;
+}
+/* @media (max-width: 768px) {
     .slider .slide .caption {
       position: absolute;
       bottom: 20px;
@@ -123,46 +112,88 @@ ul {
     75% {
         left: -300%;
     }
-    
     95% {
         left: -300%;
     }
-    100%{
-        left: -400%;
+    100% {
+        left: 0;
     }
   }
-   .slider .slide.slide1 {
-    background-image: url("img/narutoslider.jpg");
-    background-size: cover;
-     
-    background-repeat: no-repeat;
-    z-index: -1;
-    
-  }
-   .slider .slide.slide2 {
-    background-image: url("img/aotslider.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
-
-
-  }
-   .slider .slide.slide3 {
-    background-image: url("img/spyxslider.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
-
-
-  }
-   .slider .slide.slide4 {
-    background-image: url("img/demonslider.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
-
-
-  }
-
-
   
+.aslider .aslide.aslide1 {
+  background-image: url("img/narutoslider.jpg");
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.aslider .aslide.aslide2 {
+  background-image: url("img/aotslider.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.aslider .aslide.aslide3 {
+  background-image: url("img/spyxslider.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.aslider .aslide.aslide4 {
+  background-image: url("img/demonslider.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.mslider .mslide.mslide1 {
+  background-image: url("img/frozenslider.jpg");
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.mslider .mslide.mslide2 {
+  background-image: url("img/avengersslider.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.mslider .mslide.mslide3 {
+  background-image: url("img/httydslider.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.mslider .mslide.mslide4 {
+  background-image: url("img/conjuringslider.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.sslider .sslide.sslide1 {
+  background-image: url("img/stslider.jpg");
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.sslider .sslide.sslide2 {
+  background-image: url("img/Mismatched.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.sslider .sslide.sslide3 {
+  background-image: url("img/heistslider.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.sslider .sslide.sslide4 {
+  background-image: url("img/squidslider.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
