@@ -55,13 +55,11 @@ body.homepage {
   border-radius: 15px;
   position: relative;
   width: 50%;
-  /* background-image: url("img/movie.jpg");
-  background-size: cover; */
+  background-image: url("img/movie.jpg");
+  background-size: cover;
   box-shadow: 3px 3px 10px #252525;
 }
-#movlogo{
-  background-image: url("img/movlogo.jpg");
-}
+
 .hiddentxt {
   position: absolute;
   bottom: 0;
