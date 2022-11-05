@@ -7,7 +7,7 @@
 }
 ul {
   list-style: none;
-  background-color: #252525;
+  /* background-color: #252525; */
   justify-content: center;
   text-align: center;
 }
@@ -36,9 +36,10 @@ li a {
   color: whitesmoke;
 }
 body.homepage {
-  background-color: #28231d;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
   font-family: "Kanit", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
+  
 }
 .selection {
   justify-content: space-evenly;
@@ -85,14 +86,14 @@ body.homepage {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #cc0000;
+  /* background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+  background-color: #062639;
   overflow: hidden;
   width: 100%;
   height: 0;
   transition: 0.5s ease;
   border-radius: 15px;
   color: whitesmoke;
-  opacity: 0.95;
 }
 .image {
   display: flex;
@@ -110,12 +111,17 @@ body.homepage {
 }
 .options1:hover .hiddentxt {
   height: 100%;
+  box-shadow: 2px 2px 25px #429e9d;
 }
 .options2:hover .hiddentxt {
   height: 100%;
+  box-shadow: 2px 2px 25px #429e9d;
+
 }
 .options3:hover .hiddentxt {
   height: 100%;
+  box-shadow: 2px 2px 25px #429e9d;
+
 }
 h1 {
   text-align: center;
@@ -274,7 +280,7 @@ img:hover {
 body.moviepage,
 body.seriespage,
 body.animepage {
-  background-color: #28231d;
+  background-image: linear-gradient(to right, #252525 0%, black 100%);
   overflow-x: hidden;
   font-family: "Kanit", sans-serif;
 }
@@ -340,3 +346,80 @@ body.animepage {
   height: 50px;
   margin-block: 10px;
 }
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  margin: 35px;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 2;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: whitesmoke;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+  
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+  
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  z-index: 1;
+  list-style: none;
+  background-color:  #062639;
+  box-shadow: 2px 2px 6px   #429e9d;
+
+  transition-duration: .5s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  transform: scale(1.75);
+  }
+

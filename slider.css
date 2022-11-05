@@ -6,11 +6,14 @@
   overflow: hidden;
 }
 
+
 ul {
   list-style: none;
   background-color: rgba(0, 0, 0, 0);
   justify-content: center;
   text-align: left;
+  z-index: 1;
+  position:relative;
 }
 li:hover {
   border-radius: 40px;
@@ -39,8 +42,7 @@ li a {
   left: 0;
   width: 500%;
   height: 100%;
-  animation: animate 20s linear infinite;
-  z-index: -1;
+  animation: animate 8s  linear infinite;
 }
 .aslider .aslide , .mslider .mslide , .sslider .sslide{
   position: relative;
@@ -53,12 +55,15 @@ li a {
   bottom: 500px;
   left: 100px;
   right: 50%;
+  /* z-index: 1; */
   /* padding: 30px; */
 
   /* background: rgba(0, 0, 0, 0.5); */
   box-sizing: border-box;
   transition: 0.5s;
 }
+
+
 .caption h2 {
   padding: 0;
   color: black;
@@ -125,75 +130,75 @@ li a {
   background-size: cover;
 
   background-repeat: no-repeat;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .aslider .aslide.aslide2 {
   background-image: url("img/aotslider.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .aslider .aslide.aslide3 {
   background-image: url("img/spyxslider.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .aslider .aslide.aslide4 {
   background-image: url("img/demonslider.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .mslider .mslide.mslide1 {
-  background-image: url("img/frozenslider.jpg");
+  background-image: url("img/twislider.jpg");
   background-size: cover;
 
   background-repeat: no-repeat;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .mslider .mslide.mslide2 {
-  background-image: url("img/avengersslider.jpg");
+  background-image: url("img/frozenslider.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .mslider .mslide.mslide3 {
   background-image: url("img/httydslider.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .mslider .mslide.mslide4 {
-  background-image: url("img/conjuringslider.jpg");
+  background-image: url("img/the-nun-movie-key-art-kc-01.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .sslider .sslide.sslide1 {
-  background-image: url("img/stslider.jpg");
+  background-image: url("img/tvdslider.jpg");
   background-size: cover;
 
   background-repeat: no-repeat;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .sslider .sslide.sslide2 {
   background-image: url("img/Mismatched.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .sslider .sslide.sslide3 {
-  background-image: url("img/heistslider.webp");
+  background-image: url("img/fmslider.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .sslider .sslide.sslide4 {
   background-image: url("img/squidslider.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1;
+  /* z-index: -1; */
 }
