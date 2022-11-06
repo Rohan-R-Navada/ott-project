@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -29,7 +29,9 @@ ul li {
   font-size: 20px;
   font-family: "Kanit", sans-serif;
   letter-spacing: 3px;
+  
 }
+
 
 li a {
   text-decoration: none;
@@ -60,7 +62,7 @@ body.homepage {
   width: 50%;
   /* background-image: url("img/movie.jpg");
   background-size: cover; */
-  box-shadow: 3px 3px 10px #252525;
+  box-shadow: 3px 3px 10px #202020;
 }
 .options1 {
   background-image: url("img/movlogo.jpg");
@@ -279,7 +281,8 @@ img:hover {
 }
 body.moviepage,
 body.seriespage,
-body.animepage {
+body.animepage ,
+body.aboutpage{
   background-image: linear-gradient(to right, #252525 0%, black 100%);
   overflow-x: hidden;
   font-family: "Kanit", sans-serif;
@@ -423,3 +426,127 @@ body.animepage {
   transform: scale(1.75);
   }
 
+body.loginpage{
+  overflow: hidden;
+background-image: url("img/loginbg.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.card{
+  border:  1px solid black;
+  margin-right:100px; 
+text-align: center;
+  width: 500px;
+  height: 500px;
+  color: whitesmoke;
+  border-radius: 25px;
+  box-shadow: 4px 4px 65px #004d7a;
+  letter-spacing: 3px;
+  background-color: #252525;
+  float: right;
+}
+
+input[type="text"]{
+  margin-top: 80px;
+  background: none;
+  width: 350px;
+  height: 50px;
+border: none;
+padding: 20px;
+color: whitesmoke;
+
+
+}
+
+
+input[type="password"]{
+  background: none;
+  width: 350px;
+  height: 50px;
+border: none;
+padding: 20px;
+color: whitesmoke;
+
+margin-top: 50px;
+}
+
+#btn{
+  display: block;
+  margin-left: 200px;
+  margin-block: 60px;
+  width: 100px;
+  /* height: 40px; */
+  border-radius: 20px;
+  padding: 20px;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+font-weight: 800;
+border-style: none;
+box-shadow: 2px 2px 70px #252525;
+}
+
+  .logintitle{
+    font-family: 'Pacifico', cursive;
+    color: #202020;
+    margin-block: 130px;
+    margin-left: 100px;
+   text-decoration: underline;
+
+  
+  }
+
+  #one{
+    float:right;
+    color: whitesmoke;
+     font-family: 'Pacifico', cursive;
+    font-size: 30 ;
+  }
+
+  #two{
+    margin-left: 400px;
+  }
+
+  body.aboutpage{
+    overflow: hidden;
+  }
+  .rohan,.pun{
+    width: 400px;
+    height: 600px;
+    margin: 5% 250px;
+    display: inline-block ;
+    box-shadow:2px 2px 30px #00bf72;
+border-radius: 20px;
+background-color: grey;
+opacity: 0.3;
+transition: 0.5s;
+  }
+  .mypic,.herpic{
+    border-radius: 50%;
+    margin: 30px 25%;
+    width: 50%;
+    height: 30%;
+    box-shadow: 2px 2px 40px white ;
+  }
+  .contact{
+    width: 70%;
+    margin: 10%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  label{
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    }
+    .rohan:hover,.pun:hover{
+      transform: scale(1.15);
+      opacity: 1;
+    }
