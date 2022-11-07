@@ -428,14 +428,14 @@ body.aboutpage{
 
 body.loginpage{
   overflow: hidden;
-background-image: url("img/loginbg.jpg");
+background-image: url("img/c2.jpeg");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
 .card{
   border:  1px solid black;
-  margin-right:100px; 
+  margin-top: 70px; 
 text-align: center;
   width: 500px;
   height: 500px;
@@ -444,7 +444,7 @@ text-align: center;
   box-shadow: 4px 4px 65px #004d7a;
   letter-spacing: 3px;
   background-color: #252525;
-  float: right;
+  float: left;
 }
 
 input[type="text"]{
