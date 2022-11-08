@@ -526,6 +526,8 @@ border-radius: 20px;
 background-color: grey;
 opacity: 0.3;
 transition: 0.5s;
+font-weight: 900;
+
   }
   .mypic,.herpic{
     border-radius: 50%;
@@ -549,4 +551,14 @@ transition: 0.5s;
     .rohan:hover,.pun:hover{
       transform: scale(1.15);
       opacity: 1;
+
+    }
+    .mypic{
+      background-image: url("img/roh.jpeg");
+      background-position: center;
+      background-size: cover;
+    }
+    .herpic{
+      background-image: url("img/pun.png");
+      background-position: center;
     }
